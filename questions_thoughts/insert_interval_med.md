@@ -16,12 +16,12 @@ There are two steps to the solution.
 1. If intervals array is empty, just append the newInterval.
 2. If the intervals array contains 1 element, there are two places to insert the newInterval array. 
 ```python
-if endNew < i[0]>:
+if endNew < i[0]:
     insert at 0
 elif startNew > i[1]:
     insert at 1
 else:
-    insert at 0 # To handle on overlapping interval
+    insert at 0 # To handle one overlapping interval.
 ```
 3. If len(intervals) > 1
 ```python
